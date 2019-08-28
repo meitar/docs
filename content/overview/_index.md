@@ -9,9 +9,7 @@ NYC Mesh is several things at once.
 * The **organization itself** is a non-commercial *Wireless ISP*.
 * The **connected participants** operate numerous *community networks* "on the mesh" for the purpose of supporting various neighborhood initiatives that are of interest to local residents.
 
-<iframe width="560" height="315" style="display: block; margin: 0 auto;" src="https://www.youtube-nocookie.com/embed/glW_S9bKAHk?VIDEO_ID?version=3&playlist=glW_S9bKAHk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"><p>
-<a href="https://www.youtube-nocookie.com/embed/glW_S9bKAHk?VIDEO_ID?version=3&playlist=glW_S9bKAHk">Watch our short video introduction about how you can connect to NYC Mesh.</a>
-</p></iframe>
+{{< youtube id="glW_S9bKAHk" >}}
 
 ## NYC Mesh as a mesh network
 
