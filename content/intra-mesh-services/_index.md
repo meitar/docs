@@ -19,7 +19,7 @@ In the simplest cases, an intra-mesh service can be accessed merely by typing it
 
 NYC Mesh supplies internal [domain names](https://simple.wikipedia.org/wiki/Domain_Name_System) to intra-mesh services for free under a `.mesh` top-level domain. A top-level domain (TLD) is simply the last or right-most part of the domain name for a given service. For example, the TLD for both "Google.com" and "Facebook.com" is `.com`.
 
-In addition to these conventional TLDs, computers connected to NYC Mesh can *also* access services that have been given `.mesh` domain names. So, for example, you could host a blog at a URL like `my-mesh-life.mesh` and readers would be able to type `http://my-mesh-life.mesh` into their Web browsers to load and read it.
+In addition to the more well-known, conventional TLDs, computers connected to NYC Mesh can *also* access services that have been given `.mesh` domain names. So, for example, you could host a blog at a URL like `my-mesh-life.mesh` and readers would be able to type `http://my-mesh-life.mesh` into their Web browsers to load and read it.
 
 For more information about the `.mesh` TLD, see our [Network Design Reference § DNS]({{< relref "network-design/dns" >}}) documentation.
 
