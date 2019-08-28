@@ -1,5 +1,5 @@
 ---
-title: VPN
+title: Virtual Private Network (VPN)
 aliases:
     - /networking/vpn
 ---
