@@ -1,19 +1,17 @@
-{{ if isset .Params "title" }}
-	{{ .Scratch.Set "title" .Title }}
-	{{ .Scratch.Add "title" " - " }}
-{{ end }}
-{{ .Scratch.Add "title" .Site.Title }}
-{{ $title := .Scratch.Get "title" }}
+{{- if isset .Params "title" -}}
+    {{- .Scratch.Set "title" .Title -}}
+    {{- .Scratch.Add "title" " - " -}}
+{{- end -}}
+{{- .Scratch.Add "title" .Site.Title -}}
+{{- $title := .Scratch.Get "title" -}}
 <!DOCTYPE html>
 <html>
 <head>
-	<title>
-		{{ $title }}
-	</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="/css/main.css" rel='stylesheet' />
+    <title>{{ $title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/css/main.css" rel="stylesheet" />
 
-	 <!-- Start of Open Graph -->
+    <!-- Start of Open Graph -->
     <meta property="og:title" content="{{ $title }}">
     {{ if .IsPage }}
     <meta property="og:type" content="article">
@@ -55,10 +53,10 @@
 </head>
 <body class="sans-serif">
     <div class="h-100 flex-ns">
-    	{{ partial "sidebar" . }}
+        {{ partial "sidebar" . }}
         <div class="overflow-y-scroll-ns w-80-ns">
             {{ partial "header" . }}
-        	{{ block "main" . }}
+            {{ block "main" . }}
             {{ end }}
         </div>
     </div>
