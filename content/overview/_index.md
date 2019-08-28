@@ -25,7 +25,7 @@ Among the many benefits of [joining NYC Mesh](https://nycmesh.net/join) is lower
 
 Unlike many traditional ISPs who use physical copper or fiber cabling buried under streets and sidewalks to connect their subscribers to the Internet, we use radio antennaes mounted on building rooftops to increase our coverage area. This is where the *wireless* in Wireless ISP (WISP) comes in. Whenever we install a new antennae on a rooftop, the physical coverage area of our network expands exactly as far as the radio signal will reach. The specifics of each installation varies but, in general, every new node means more coverage and a more resilient network for participants.
 
-However, to connect you to sites like Wikipedia and other services who do not have servers within NYC Mesh's physical mesh network, we also operate computers at major NYC Internet exchange points (IXPs) such as [DE-CIX](https://www.de-cix.net/en/locations/united-states/new-york). Thanks to the fact that these computers are physically connected both to the rest of the Internet *and* the NYC Mesh wireless mesh network, new NYC Mesh nodes can also access the rest of the Internet.
+In order to provide NYC Mesh members with Internet connectivity so that you can browse sites like Wikipedia and others who do not have servers within NYC Mesh's physical mesh network, we also operate computers at major NYC Internet exchange points (IXPs) such as [DE-CIX](https://www.de-cix.net/en/locations/united-states/new-york). Thanks to the fact that these computers are physically connected both to the rest of the Internet *and* the NYC Mesh wireless mesh network, all connected NYC Mesh nodes can also access the rest of the Internet.
 
 ## NYC Mesh as a community network
 
