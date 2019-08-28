@@ -1,10 +1,10 @@
 ---
-title: VPN - WireGuard
+title: WireGuard VPN
 aliases:
     - /networking/vpnwireguard
 ---
 
-[WireGuard](https://wireguard.com/) is a newer, simpler, and faster [Free Software](https://www.gnu.org/philosophy/free-sw.html) VPN implementation and protocol. For comparison, the older [L2TP/IPsec VPNs]({{< relref "vpnl2tpipsec.md" >}}) will max out at about 100Mbps, but WireGuard VPNs can reach speeds upward of 300-400Mbps on decent hardware and even 1Gbps on a good workstation. Performance is better on computers running a Linux kernel because the WireGuard project was designed to live within the Linux kernel from the start. Userspace ports for macOS, Windows, iOS, Android, and other platforms are now available but are not as performant as the Linux kernelspace implementation.
+[WireGuard](https://wireguard.com/) is a newer, simpler, and faster [Free Software](https://www.gnu.org/philosophy/free-sw.html) VPN implementation and protocol. For comparison, the older [L2TP/IPsec VPNs]({{< relref "l2tp-ipsec" >}}) will max out at about 100Mbps, but WireGuard VPNs can reach speeds upward of 300-400Mbps on decent hardware and even 1Gbps on a good workstation. Performance is better on computers running a Linux kernel because the WireGuard project was designed to live within the Linux kernel from the start. Userspace ports for macOS, Windows, iOS, Android, and other platforms are now available but are not as performant as the Linux kernelspace implementation.
 
 In addition to its speed, WireGuard has some great features such as [built-in roaming](https://www.wireguard.com/#built-in-roaming) (a single encrypted packet moves the tunnel to your new IP), [cryptokey routing](https://www.wireguard.com/#cryptokey-routing), and formal cryptographic verification. It also has some challenges, such as pre-key exchange and a lack of automatic address assignment. Cryptokey routing also presents its own challenges in some situations (see [§ A Note on Cryptokey Routing]({{< relref "#a-note-on-cryptokey-routing" >}})).
 

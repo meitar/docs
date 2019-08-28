@@ -1,10 +1,10 @@
 ---
-title: VPN - L2TP/IPsec
+title: L2TP/IPsec VPN
 aliases:
     - /networking/vpnl2tpipsec
 ---
 
-An L2TP/IPsec VPN is an "enterprise VPN" setup, so called because it is most often used by corporations to provide remote access to one or more computers that are physically disconnected from the rest of their corporate network. It is based on a combination of the aforementioned L2TP and IPsec protocol standards. The former protocol (L2TP, the [Layer 2 Tunneling Protocol](https://en.wikipedia.org/wiki/Layer_2_Tunneling_Protocol)) carries a "call" over the Internet, while the latter protocol suite ([IPsec](https://en.wikipedia.org/wiki/IPsec), Internet Protocol Security) encrypts the call and authenticates the participants.
+An **L2TP/IPsec VPN** is an "enterprise VPN" setup, so called because it is most often used by corporations to provide remote access to one or more computers that are physically disconnected from the rest of their corporate network. It is based on a combination of the aforementioned L2TP and IPsec protocol standards. The former protocol (L2TP, the [Layer 2 Tunneling Protocol](https://en.wikipedia.org/wiki/Layer_2_Tunneling_Protocol)) carries a "call" over the Internet, while the latter protocol suite ([IPsec](https://en.wikipedia.org/wiki/IPsec), Internet Protocol Security) encrypts the call and authenticates the participants.
 
 To offer an L2TP/IPsec VPN, the VPN provider operates a central server that waits to be contacted by remote computers. The central server is called the *VPN server* and the remote computers are called *VPN clients*. When a VPN client connects to the VPN server, the VPN server presents a subnet to the client, informing it of how to reach additional computers on the private network, and the VPN server offers itself as the client's default route to those computers. The connection between the client and the server is secure because of the use of IPsec, which encrypts the traffic in a similar way as HTTPS encrypts the connection between a Web browser and a Web server.
 
