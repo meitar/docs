@@ -1,5 +1,7 @@
 ---
 title: "Mesh Design"
+aliases:
+    - /networking/mesh
 ---
 
 NYC Mesh is designed and run as a mesh network.  As a mesh, various nodes connect to each other in a non-hierarchical way, with traffic flowing in either direction, and rerouting traffic as nodes fail.
