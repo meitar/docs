@@ -1,9 +1,13 @@
 
 ---
-title: "Taking Panorama Photos"
+title: Taking Panorama Photos
 ---
 
-A direct line of sight to a Supernode or hub node is required to connect to NYC Mesh. To help the install team determine whether a line of sight is possible, we ask new members to provide a panoramic photo from their rooftop or window. 
+Before an NYC Mesh Install Team attempts to install a new node, they need to know whether the new node is located in a position with direct line of sight (LOS) to an existing hub or supernode. This is because, due to [the way radio waves propagate](https://en.wikipedia.org/wiki/Line-of-sight_propagation), the existing and new nodes need to be able to see each other in order to connect to one another. If there are obstacles, such as tall buildings or other structures, in between the existing hub and potential new node, the radio signal transmitted from the existing node will not be able to reach the new node's radio receiver, and vice versa.
+
+To save time and help the Install Team determine whether line of sight is possible, NYC Mesh asks new members who submit a [join request](https://nycmesh.net/join) to provide a panoramic photo from their rooftop or window as part of the informtion they send in when becoming members. An Install Team volunteer may also visit the new node location themselves, especially in the case of do-it-yourself installers, and take a panoramic photo as part of their very first site survey.
+
+This page documents best practices for taking good panoramic photos and explains how to annotate them so that they will be of the most use to the Install Team.
 
 ### Where to find the panorama photo function on your phone
 
@@ -45,5 +49,3 @@ Taking a panorama image should show as much of the surrounding landscape as poss
 ![alt text](https://node-db.netlify.com/panoramas/303.jpg "Example 2")
 ![alt text](https://node-db.netlify.com/panoramas/303a.jpg "Example 3")
 ![alt text](https://i.imgur.com/flNZi7r.jpg "Example 4")
-
-

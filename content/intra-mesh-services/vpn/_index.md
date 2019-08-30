@@ -53,12 +53,19 @@ For configuration instructions, please see our [L2TP/IPsec page]({{< relref "int
 
 [WireGuard]({{< relref "intra-mesh-services/vpn/wireguard" >}}) is a modern type of VPN that was originally developed for Linux. There are now versions of the Wireguard VPN client software available for recent macOS and Windows operating systems as well. WireGuard is also very fast, but has some funny routing requirements.
 
+#### Tinc
+
+Although we are in the process of phasing out [Tinc](https://tinc-vpn.org/) endpoints, we have historically used a Tinc VPN and some nodes may still use it.
+
+See [legacy "TINC" documentation](https://github.com/nycmeshnet/organize/blob/master/software/TINC) for the time being.
+
 #### Other VPN types
 
 Other VPN protocols exist, but are either not offered by NYC Mesh endpoints or are not documented. These include:
 
 * [OpenVPN](https://openvpn.net/): Good General purpose VPN, works with most platforms, usually pretty fast on computers/servers but very slow on embedded devices.
-* VTrunkD: Experimental VPN for bonding multiple connections together. Interesting concept.
+* [VTrunkD](https://github.com/VrayoSystems/vtrunkd): Experimental VPN for bonding multiple connections together. Interesting concept.
+* [strongSwan](https://www.strongswan.org/)/[Libreswan](https://libreswan.org/)
 * Others?
 
 ## Endpoints
