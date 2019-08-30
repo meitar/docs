@@ -50,13 +50,13 @@ To annotate your panorama photo, we recommend that you first make a copy of the 
 * [Paint](https://support.microsoft.com/en-us/help/4027344/windows-10-get-microsoft-paint) or [Greenshot](https://getgreenshot.org/) (on Windows)
 * [GIMP](https://www.gimp.org/) (on GNU/Linux)
 
-Good annotations include labels for the following objects visible in your panorama photograph:
+Well-annotated images will include labels for the following in your panorama photograph:
 
 * Cardinal directions (North, East, South, West)
 * Nearby NYC Mesh infrastructure (hubs, supernode, existing neighor nodes)
 * Visual landmarks (famous buildings, main streets, etc.)
 
-For some inspiration, take a look at the [panorama photo examples](#panorama-photo-examples) shown below.
+Take a look at the [panorama photo examples](#panorama-photo-examples) shown below for some inspiration.
 
 ## Panorama photo examples
 
