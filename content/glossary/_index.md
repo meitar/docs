@@ -3,7 +3,7 @@ title: Glossary
 weight: 1200
 ---
 
-Telecommunications, computing, and internetworking technologies often have an enormous amount of jargon associated with them. This jargon makes it possible to speak precisely and quickly to others who are in-the-know, but can also drastically increase the learning curve for newcomers. We offer this page as a quick reference guide for common terms, acronyms, and other abbreviations that NYC Mesh technical teams use on a regular basis.
+Telecommunications, computing, and internetworking technologies often have an enormous amount of jargon associated with them. This jargon makes it possible to speak precisely and quickly to others who are in-the-know, but can also drastically increase the learning curve for newcomers. We offer this page as a quick reference guide for common terms, acronyms, and other abbreviations that the NYC Mesh Docs and volunteers use on a regular basis.
 
 # A
 
@@ -97,6 +97,9 @@ ISP
 
 LIR
 : local Internet registry, an organization that has been allocated a block of IP addresses by a regional Internet registry (RIR)
+
+LOS
+: Line of sight.
 
 LuCI
 : (pronounced Lucy) Lua Unified Configuration Interface, the web interface in OpenWRT
