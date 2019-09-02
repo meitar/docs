@@ -12,7 +12,7 @@ As a community-owned network, city residents such as yourself take it upon thems
 
 ## About this Website
 
-The NYC Mesh Docs website is the central clearinghouse for technical information about our network. Here, we describe the implementation of specific [nodes]({{< relref "nodes" >}}), document [installation procedures]({{< relref "installs" >}}), and more. This website is not a networking tutorial, so readers are expected to have some basic familiarity with computer internetworking concepts to take full advantage of the material we present here, but we do strive to provide links to good educational resources for newcomers where it makes sense to do so.
+The NYC Mesh Docs website is the central clearinghouse for technical information about our network. Here, we describe the implementation of specific [nodes]({{< relref "nodes" >}}), document [installation procedures]({{< relref "install-guide" >}}), and more. This website is not a networking tutorial, so readers are expected to have some basic familiarity with computer internetworking concepts to take full advantage of the material we present here, but we do strive to provide links to good educational resources for newcomers where it makes sense to do so.
 
 There are a couple of different ways that you can make use of this website.
 

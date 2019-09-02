@@ -1,6 +1,8 @@
 ---
 title: "New Node Installation Guide"
 weight: 400
+aliases:
+    - /installs/
 ---
 
 In order to connect to NYC Mesh, members typically need to install physical equipment (a router, antenna, cabling, etc.) within radio range of an existing member's installation. We refer to each of these installations as *nodes*. To expand the mesh, new nodes must be installed across the city.

@@ -6,8 +6,8 @@ There are many ways that you can start participating in the NYC Mesh community a
 
 If you  would like to… | …you should read the following documentation areas
 -----------------------|---------------------------------------------------
-Join your home to the mesh | [Overview]({{< relref "overview" >}}), [New Node Installation Guide]({{< relref "installs" >}})
-Volunteer to install new nodes | [Overview]({{< relref "overview" >}}), [New Node Installation Guide]({{< relref "installs" >}}), [Hardware Reference]({{< relref "hardware" >}}), [Outreach and Publicity Guide]({{< relref "outreach" >}})
+Join your home to the mesh | [Overview]({{< relref "overview" >}}), [New Node Installation Guide]({{< relref "install-guide" >}})
+Volunteer to install new nodes | [Overview]({{< relref "overview" >}}), [New Node Installation Guide]({{< relref "install-guide" >}}), [Hardware Reference]({{< relref "hardware" >}}), [Outreach and Publicity Guide]({{< relref "outreach" >}})
 Monitor mesh network services | [Overview]({{< relref "overview" >}}), [Intra-mesh Services and Features]({{< relref "intra-mesh-services" >}}), [Software Reference]({{< relref "software" >}})
 Help solve community member connectivity issues | [Overview]({{< relref "overview" >}}), [Outreach and Publicity Guide]({{< relref "outreach" >}}), [Troubleshooting Guide]({{< relref "troubleshooting" >}})
 Improve network security | [Overview]({{< relref "overview" >}}), [Intra-mesh Services and Features]({{< relref "intra-mesh-services" >}}), [Network Design Reference]({{< relref "network-design" >}}), [Software Reference]({{< relref "software" >}}), [Security]({{< relref "security" >}})

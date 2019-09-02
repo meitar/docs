@@ -29,7 +29,7 @@ Each room in our Slack group, called a channel, hosts a discussion about a certa
 : Slack channels whose names begin with `#hub-` are for discussions relating to their specific node. For example, the `#hub-saratoga-1340` Slack channel is about [the Saratoga node (number 1340)]({{< relref "nodes/node-1340" >}}).
 
 [`#install-team`](https://nycmesh.slack.com/messages/install-team)
-: This channel is for coordinating logistics regarding rooftop [installs]({{< relref "installs" >}}).
+: This channel is for coordinating logistics regarding rooftop [installs]({{< relref "install-guide" >}}).
 
 [`#mesh-services`](https://nycmesh.slack.com/messages/mesh-services)
 : Hyperlocal services and content that are specific to NYC Mesh's network such as [the `.mesh` intra-mesh DNS TLD]({{< relref "network-design/dns" >}}) are discussed here.

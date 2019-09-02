@@ -1,4 +1,3 @@
-
 ---
 title: Taking Panorama Photos
 ---
