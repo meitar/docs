@@ -6,7 +6,7 @@ Before a new node can be added to the NYC Mesh network, it must meet some minimu
 
 A good site survey will provide an Install Team with the following:
 
-* Annotated panorama photographs of the install site. See [Taking Panoarama Photos]({{< relref "panoramas" >}}) for details and [§ Determining LOS](#determining-los).
+* Annotated panorama photographs of the install site. See [Taking Panoarama Photos]({{< relref "panoramas" >}}) for details and [§ Determining LOS](#assess-los-to-an-existing-node).
 * Advance warning of any physical hazards at the install site. See [Site Safety]({{< relref "safety" >}}) for details.
 * A report on pre-existing radio spectrum emissions at the install site that may interfere with new node equipment. See [§ Wireless Site Survey](#perform-a-wireless-site-survey) for details.
 
