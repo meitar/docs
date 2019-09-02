@@ -1,5 +1,7 @@
 ---
 title: Equipment
+aliases:
+    - /installs/equipment/
 ---
 
 To connect to NYC Mesh, you will need to install wireless networking equipment on a rooftop or outside a window. This page lists a range of equipment and tools that are commonly used for typical installations. Before assembling any equipment, first carry out a site survey and make an install plan to narrow down the equipment you really need. For detailed information about specific routers, visit the [hardware](https://docs.nycmesh.net/hardware/) docs.

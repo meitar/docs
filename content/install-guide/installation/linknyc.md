@@ -1,5 +1,7 @@
 ---
 title: "LinkNYC Kiosk"
+aliases:
+    - /installs/linknyc
 ---
 
 **We do not recommend a LinkNYC Kiosk repeater at the moment as the connection has become unreliable**

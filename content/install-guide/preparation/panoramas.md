@@ -1,5 +1,7 @@
 ---
 title: Taking Panorama Photos
+aliases:
+    - /installs/panoramas
 ---
 
 Before an NYC Mesh Install Team attempts to install a new node, they need to know whether the new node is located in a position with direct line of sight (LOS) to an existing hub or supernode. This is because, due to [the way radio waves propagate](https://en.wikipedia.org/wiki/Line-of-sight_propagation), the existing and new nodes need to be able to see each other in order to connect to one another. If there are obstacles, such as tall buildings, dense foliage, or other structures in between the existing hub node and the potential new node, the radio signal transmitted from the existing node will not be able to reach the new node's radio receiver, and vice versa.

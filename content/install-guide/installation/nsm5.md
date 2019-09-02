@@ -1,5 +1,7 @@
 ---
 title: "NanoStationM5 Outdoor"
+aliases:
+    - /installs/nsm5
 ---
 
 **Hardware**

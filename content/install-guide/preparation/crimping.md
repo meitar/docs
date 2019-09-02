@@ -1,5 +1,7 @@
 ---
 title: "How to Crimp an Ethernet cable"
+aliases:
+    - /installs/crimping
 ---
 
 <br>

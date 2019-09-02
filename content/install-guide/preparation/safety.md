@@ -1,5 +1,7 @@
 ---
 title: "Site Safety"
+aliases:
+    - /installs/safety
 ---
 
 Growing the mesh is important, but so is staying safe to install more nodes.

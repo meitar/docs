@@ -1,5 +1,7 @@
 ---
 title: "Supernode 2+ and Hub CPE"
+aliases:
+    - /installs/cpe2
 ---
 
 This explains in detail how to configure Ubiquiti sector clients (e.g. LiteBeamAC or NanoBeamAC) to work with Hub nodes (such as Node 1340). [For connecting to supernode 1 see here](../cpe). For further support use the *#install* channel on [our Slack](https://slack.nycmesh.net/).  

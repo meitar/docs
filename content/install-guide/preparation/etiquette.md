@@ -1,5 +1,7 @@
 ---
 title: "Etiquette Guide"
+aliases:
+    - /installs/etiquette/
 ---
 **for volunteer installers**
 

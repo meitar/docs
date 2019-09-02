@@ -3,4 +3,4 @@ title: After the Installation
 weight: 900
 ---
 
-Test.
+This section describes the recommended steps you should take after you complete an NYC Mesh installation.
