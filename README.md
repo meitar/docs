@@ -103,8 +103,8 @@ For more information, please read ["Creating a pull request" in the official Git
 
 ## Contributors
 
-If you make many good changes, you may be invited to join the documentation project as a contributor. You may also ask us to grant you contributor access in [our Slack group](https://nycmesh.slack.com).
+If you make many good changes, you may be invited to join the documentation project as a contributor. You may also ask us to grant you contributor access in [our Slack group](https://slack.nycmesh.net/).
 
 ## Getting Help
 
-As always, if you need any help, don't hesitate to reach out in our Slack group. [Invites to our Slack are available here](https://join.slack.com/t/nycmesh/shared_invite/enQtNDk0NDA4OTAyNDY0LTU5NWMyODY5ZTYyMDY2NzgzOTJmZjFmZTg3YWRjYjE0M2EyMzlhNDE3YmIxZmZhYTZmNjIwNTVkMDIwMjI2ZDg).
+As always, if you need any help, don't hesitate to reach out in [our Slack group](https://slack.nycmesh.net/).

@@ -2,7 +2,7 @@
 title: "Supernode 2+ and Hub CPE"
 ---
 
-This explains in detail how to configure Ubiquiti sector clients (e.g. LiteBeamAC or NanoBeamAC) to work with Hub nodes (such as Node 1340). [For connecting to supernode 1 see here](../cpe). For further support use the *#install* channel on [our Slack](https://nycmesh.slack.com).  
+This explains in detail how to configure Ubiquiti sector clients (e.g. LiteBeamAC or NanoBeamAC) to work with Hub nodes (such as Node 1340). [For connecting to supernode 1 see here](../cpe). For further support use the *#install* channel on [our Slack](https://slack.nycmesh.net/).  
 
 A less detailed quick config is [here](/hardware/config/#lbe-client)
 
@@ -80,7 +80,7 @@ To connect via management wifi-
       *   Make sure you typed "http://" before the IP address (otherwise your browser might think you're trying to google the IP address)
       *   Try connecting via the management WiFi instead of ethernet as above. 
       *   If you still can't connect try hard resetting the device by inserting a pin or paperclip into the little hole above the port and pressing the internal button for about 10 seconds.
-      *   If all else fails, try asking on the #install channel on [our Slack](https://nycmesh.slack.com)
+      *   If all else fails, try asking on the #install channel on [our Slack](https://slack.nycmesh.net/)
       
 
 1.  You will get an ssh warning "Your connection is not..." -- ignore it and click "advanced" to proceed. (This is because the interface uses https)
