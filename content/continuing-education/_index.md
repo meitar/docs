@@ -9,7 +9,7 @@ As a community-owned and volunteer-operated network, it is important to NYC Mesh
 
 One resource deserves special mention: the "[How to start a community network](https://www.nycmesh.net/blog/how/)" post on our blog.
 
-NYC Mesh volunteers are often asked about how to start projects similar to our in other areas. One of our founding members wrote a blog post specifically to address this inquiry that has we often use as a standard response to this frequently asked question.
+NYC Mesh volunteers are often asked about how to start projects similar to ours in other areas. One of our founding members wrote a blog post specifically to address this inquiry that has we often use as a standard response to this frequently asked question.
 
 ## [NYC Mesh presentations](https://www.nycmesh.net/presentations/)
 
