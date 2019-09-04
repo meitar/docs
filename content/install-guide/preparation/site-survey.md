@@ -6,9 +6,9 @@ Before a new node can be added to the NYC Mesh network, it must meet some minimu
 
 A good site survey will provide an Install Team with the following:
 
-* Annotated panorama photographs of the install site. See [Taking Panoarama Photos]({{< relref "panoramas" >}}) for details and [§ Determining LOS](#visually-confirm-los-to-an-existing-node).
+* Annotated panorama photographs of the install site. See [Taking Panoarama Photos]({{< relref "panoramas" >}}) for details.
 * Advance warning of any physical hazards at the install site. See [Site Safety]({{< relref "safety" >}}) for details.
-* A report on pre-existing radio spectrum emissions at the install site that may interfere with new node equipment. See [§ Wireless Site Survey](#perform-a-wireless-site-survey) for details.
+* A report on pre-existing radio spectrum emissions at the install site that may interfere with new node equipment.
 
 ## Page Contents
 
@@ -76,9 +76,12 @@ The KML file itself uses a [KML network link](https://developers.google.com/kml/
 
 Once you have a rough estimate of whether the new node will have LOS, the next step is to estimate whether or not the new node location will be able to establish a radio link with an existing node that is strong enough to supply connectivity to the new node.
 
-* If your prior LOS research revealed that a nearby existing node uses a Ubiquiti-branded outdoor router, consider using the [Ubiquiti airLink™ Web site](https://link.ui.com/) to simulate an RF environment to estimate connectivity levels.
+* Load the [NYC Mesh node map](https://www.nycmesh.net/map) to view basic radio coverage estimates for the new node location. ([Source code for the NYC Mesh node map is available on GitHub](https://github.com/nycmeshnet/node-map).)
+* If your prior LOS research revealed that a nearby existing node uses a Ubiquiti-branded outdoor router, consider using the [Ubiquiti airLink™ Web site](https://link.ui.com/) to more precisely simulate an RF environment to estimate connectivity levels.
 
 ## On-site
+
+Having accomplished as much as possible during your site survey pre-planning, the next step is to physically visit the new node location for an on-site survey visit. Be sure to coordinate the timing of this visit with the new node owner so that they know to expect you and can let you in to their property. Also be certain to review the [NYC Mesh Install Team Etiquette Guide]({{< relref "etiquette" >}}) before you communicate with the new NYC Mesh member.
 
 ### Assess physical access
 
