@@ -2,6 +2,9 @@
 title: GitLab
 ---
 
-The intra-mesh GitLab service is a computer source-code hosting platform available at [`gitlab.mesh`](https://gitlab.mesh/).
+The intra-mesh [GitLab](https://gitlab.com/) service is a computer source-code hosting platform available at [`gitlab.mesh`](https://gitlab.mesh/) (IP address `10.70.123.5`).
 
-> TODO: Would be nice to know more about this service. :)
+## Administrative contact
+
+* Name: `Emerson Hall`
+* NYC Mesh Slack handle: `@Emerson Hall`
