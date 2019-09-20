@@ -1,14 +1,18 @@
 ---
-title: "Supernode 2+ and Hub CPE"
+title: "Old CPE guide"
 aliases:
     - /installs/cpe2
 ---
 
-This explains in detail how to configure Ubiquiti sector clients (e.g. LiteBeamAC or NanoBeamAC) to work with Hub nodes (such as Node 1340). [For connecting to supernode 1 see here](../cpe). For further support use the *#install* channel on [our Slack](https://slack.nycmesh.net/).  
+This explains in detail how to configure Ubiquiti sector clients (e.g. LiteBeamAC or NanoBeamAC) to work with Hub nodes (such as Node 1340). For further support use the *#install* channel on [our Slack](https://nycmesh.slack.com).  
 
-A less detailed quick config is [here](/hardware/config/#lbe-client)
+**This is for reference only! New config instructions are [here](/hardware/config/#lbe-client)**
 
+***
+
+**New config instructions are [here](/hardware/config/#lbe-client)**
 #### Notable sites that can use this config:
+* Supernode 1 (previously SN1 had a different config)
 * Node 1340 (33 Saratoga Ave, serving Bed Stuy, Bushwick, Ridgewood, Crown Heights)
   * Line of sight to: 40.686017, -73.917494
   * Slack rooms: *#1340-alerts, #nycha, #bedstuy, #crownheights, #eastwburg_bushwick*
@@ -112,7 +116,7 @@ To connect via management wifi-
 1. Once you're logged into the CPE's dashboard click the "Settings" button (gear icon) on the left to give you:
     Wireless | Network | Services | System
 
-1. Change the settings as follows, or simply [download SN2+ hub config file](/hardware/config/#sn2)
+1. Change the settings as follows, or simply [download SN2+ hub config file](https://configgen.nycmesh.net/?device=LiteBeam5AC&template=sn2.cfg.tmpl)
 
 **[Wireless settings](./litebeam/wireless.png)**
 
