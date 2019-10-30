@@ -87,8 +87,12 @@ Having accomplished as much as possible during your site survey pre-planning, th
 
 1. Determine that you can access the roof (or window) where the CPE will be installed.
 1. Document any physical hazards in the way to the install location.
+    * Especially for large buildings, take photographs at each step in your route from the entrance to the install location as you go through the building.
 1. Document a route for any cabling you will need (Ethernet, etc.) to run down from the roof or indoors.
-    * Be certain to note the need for new cable passes or other modifications you will need to make to the building!
+    * In some buildings, existing ethernet, coaxial, or even fiber cabling may have been abandoned by a previous installation effort and can be repurposed for use by NYC Mesh. If so, identifying these cable runs can save a huge amount of time and money.
+    * Be certain to note the need for new cable passes or other modifications you may need to make to the building!
+    * Large buildings often require a cable to be run from the roof to the location of a centralized telecom equipment closet, often in the basement. In these cases, try to identify existing conduits that can be used as cable drops. Unless the building itself owns the conduits, NYC Mesh is not permitted to make use of existing Internet Service Provider (ISP) conduits in the building.
+    * In many building hallways, there are dedicated conduits where the wall meets the ceiling, called a raceway. If these raceways are owned by the building managers and are available for our use, they are a good choice for cable passes into apartments and general cable runs from one side of a building to another.
 
 Unless you are the only installer, consider adding any pre-install documentation to the [NYC Mesh Docs Node Reference]({{< relref "nodes" >}}) so that other volunteers can pick up where you left off.
 
@@ -106,6 +110,8 @@ Once you have verified LOS to an existing node, you should next conduct a survey
 
 [Wikpedia maintains a list of wireless site survey applications](https://en.wikipedia.org/wiki/Comparison_of_wireless_site_survey_applications) you can use to conduct the RF survey.
 
+As part of the wireless site survey, attempt a connection to the hub or hubs the new node owner is planning to connect to and perform a bandwidth test to these existing nodes. Even if the RF environment is suitable for the new node in theory, in practice it is the achievable bandwidth to the existing nodes that really matters at the end of the day.
+
 ## Report your conclusions
 
-After you complete the site survey, share your conclusions with the rest of your NYC Mesh Install Team. Further, please consider dating and documenting your findings in our [Node Reference]({{< relref "nodes" >}}) to save future volunteers from duplicating your effort.
+After you complete the site survey, share your conclusions with the rest of your NYC Mesh Install Team. Currently, this often takes the form of a shared Google Doc. Further, please consider dating and documenting your findings in our [Node Reference]({{< relref "nodes" >}}) to save future volunteers from duplicating your effort.
