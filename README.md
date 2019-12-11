@@ -1,6 +1,6 @@
 # NYC Mesh Docs
 
-This repository contains the public-facing [NYC Mesh Documentation](https://docs.nycmesh.net/) website. It is intended to provide interested community members a sort of manual or guidebook discussing how to get involved in the community network from a technical perspective. It is not a networking tutorial, and does assume that readers have some familiarity with basic networking concepts, but we strive to provide external links suggested educational resources for newcomers when it makes sense for us to do so.
+This repository contains the public-facing [NYC Mesh Documentation](https://docs.nycmesh.net/) website. It is intended to provide interested community members a sort of manual or guidebook discussing how to get involved in the community network from a technical perspective. It is not a networking tutorial, and does assume that readers have some familiarity with basic networking concepts, but we strive to provide external links to suggested educational resources for newcomers when it makes sense for us to do so.
 
 The remainder of this document describes the process for contributing to the documentation itself or developing the documentation website.
 
