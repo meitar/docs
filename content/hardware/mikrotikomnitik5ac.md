@@ -2,7 +2,7 @@
 title: "MikroTik OmniTik 5 POE ac"
 ---
 
-The Omnitik 5ac is an outdoor switch/router with a built-in 5Ghz 802.11ac access point, omnidirectional antenna, and 5 gigabit ethernet ports. Be sure to get the POE version.
+The Omnitik 5ac is an outdoor switch/router with a built-in 5Ghz 802.11ac access point, omnidirectional antenna, and 5 gigabit ethernet ports. Be sure to get the POE version. Here are [the config instructions](../config/#omni)
 
 _Please be sure to see [MikroTik Specifics](/hardware/mikrotikspecifics) for extra info about Mikrotik devices, how to connect, etc._
 
@@ -22,18 +22,18 @@ Device specs are available at [Mikrotik.com](https://mikrotik.com/product/rbomni
 
 ## Configurations
 
-### Omnitik config v3.2
-As discussed in the [MikroTik Specifics](/hardware/mikrotikspecifics) page, these devices need a script to be generated and loaded onto the device rather than a saved config file.  
-We now have a script generator you can find here [https://configgen.nycmesh.net/](https://configgen.nycmesh.net/)   
+### Omnitik config
+Here are [the current config instructions](../config/#omni). As discussed in the [MikroTik Specifics](/hardware/mikrotikspecifics) page, these devices need a script to be generated and loaded onto the device rather than a saved config file.  
+We now have a script generator you can find here [https://configgen.nycmesh.net/](https://configgen.nycmesh.net/?device=Omnitik5AC&template=rooftop-ospf.rsc.tmpl)   
 Here is a slideshow of [configuring an OmniTik](https://docs.google.com/presentation/d/1V91gqeo19D-6bTG3Mtj7dhx7ERlzHOkplmf9-kAI3NU/present)  
 
-Here is [the the new easy 4.0 config instructions](../config/#omni)
-
-The below is our old 3.2 template script which needs some variables filled in.  
-This script _only_ works on the OmniTik 5ac PoE model  
 
 <details>
-<summary>Expand for `nycmesh-omnitik-v3.2.rsc` example</summary>
+<summary>Expand for `OLD nycmesh-omnitik-v3.2.rsc` example</summary>
+  
+The is our obsolete 3.2 template script which needs some variables filled in.  
+This script _only_ works on the OmniTik 5ac PoE model  
+
 Version 3.2 Changelog:
 
 *   Separation of Public vs Tenant subnet  
@@ -165,8 +165,6 @@ add action=accept chain=input
 :beep frequency=800 length=500ms;
 :delay 50ms;
 ```
-</details>
-
 ### How to apply config:
 1.   Acquire config parameters ( BGP ASN, IP range, node number, etc. )
 2.   Fill in config file parameters at the top of the script.  
@@ -193,3 +191,5 @@ add action=accept chain=input
       * Or from CLI:
           * `/system reset-configuration run-after-reset=flash/nycmesh-omni-####.rsc no-defaults=yes`
           * Dangerous Reset anyway? Y
+
+</details>
