@@ -2,12 +2,11 @@
 title: "BGP"
 ---
 
-The [Border Gateway Protocol](https://tools.ietf.org/html/rfc4271) (BGP) is an inter-Autonomous System routing protocol.
+The [Border Gateway Protocol](https://tools.ietf.org/html/rfc4271) (BGP) is a routing protocol for directing traffic across different Autonomous Systems; it is an inter-AS routing protocol. BGP is a popular dynamic routing protocol as it is relatively simple to configure, scales well and enjoys support across multiple hardware and software vendors.
 
-## Use within NYC Mesh
-BGP is used externally at internet exchange points to connect with other networks, and internally to peer between members (using private ASNs). BGP is a popular dynamic routing protocol as it is relatively simple to configure, scales well and enjoys support across multiple hardware and software vendors.
+As of calendar year 2020, NYC Mesh no longer uses BGP internally. It has been replaced by [OSPF]({{< relref "ospf" >}}). BGP may still be used externally at Internet Exchange Points (IXPs) to connect with other networks, and other networks may use BGP to define their own routes leading to NYC Mesh. Prior to calendar year 2020, NYC Mesh used BGP internally to peer between members who were allocated private Autonomous System Numbers (ASNs).
 
-## How it works
+## BGP in a nutshell
 An Autonomous System (AS) is any entity, usually a network with some opaque internal topology, that is in possession of a unique identifier called an Autonomous System Number (ASN). The process of connecting two Autonomous Systems is called peering, and it requires BGP speakers from each AS to know the ASN and IP address of their neighbors in advance (how this information is exchanged is not specified by the protocol).
 
 Once the relevant identifying information is known, two neighboring Autonomous Systems can establish a session during which they exchange information about which IP subnets (prefixes) they know how to reach. A message between BGP speakers about reachability (or withdrawal thereof) is called an advertisement and can describe prefixes originating from an AS itself or from some other AS.
@@ -15,13 +14,13 @@ Once the relevant identifying information is known, two neighboring Autonomous S
 As reachability information about a prefix propagates through a network of interconnected Autonomous Systems, each appends its ASN to an attribute list called the "AS path". The AS path can then used by each BGP speaker to prevent routing loops from forming and to determine the shortest path to the destination prefix in the event that more than one is known.
 
 ## Filters
-BGP implementations include powerful tools for modifiying imported and exported routes. Filters are commonly used within the mesh to do things like setting a route's local preference, tagging or interpreting communities or preventing the accidental announcement of bogus routes.
+BGP implementations include powerful tools for modifiying imported and exported routes. Filters were commonly used within the mesh to do things like setting a route's local preference, tagging or interpreting communities or preventing the accidental announcement of bogus routes.
 
 ## Local preference
 If two routes to a particular destination prefix are known, a decision must be made about which route to select. BGP's [tie breaking algorithm](https://tools.ietf.org/html/rfc4271#section-9.1.2.2) usually bases the decision on an AS path length comparison, however it is possible to override this behavior by changing the route's local preference attribute. Its value (a 32-bit unsigned integer) should be increased from the default (100) to indicate that a particular route is preferred regardless of its relative AS path length.
 
 ## Communities
-[BGP communities](https://tools.ietf.org/html/rfc1997) can be used to classify routes that are imported or exported by an AS. Some definitions generally agreed upon by BGP speakers within the mesh are listed below. They are primarily used for interpreting the "quality" of various routes to the internet.
+[BGP communities](https://tools.ietf.org/html/rfc1997) can be used to classify routes that are imported or exported by an AS. Some definitions generally that were agreed upon by BGP speakers within NYC Mesh when BGP was still used internally are listed below. They were primarily used for interpreting the "quality" of various routes to the Internet.
 
 |Community|Meaning|Suggested interpretation|
 |---|---|---|
@@ -32,7 +31,7 @@ If two routes to a particular destination prefix are known, a decision must be m
 |65000:1005|Internet connected by a slow, NATed or possibly compromised 3rd party|Set local preference to 80|
 
 ## Prefix lists
-IPv4 and IPv6 prefix lists that BGP speakers within the mesh commonly filter on (for import and export) are listed below:
+IPv4 and IPv6 prefix lists that BGP speakers within the mesh used to commonly filter on (for import and export) are listed below:
 
 ### IPv4
 |Prefix (Bird notation)|Action|
@@ -51,10 +50,10 @@ IPv4 and IPv6 prefix lists that BGP speakers within the mesh commonly filter on 
 |All others|Deny|
 
 ## How to get an ASN or IP allocation
-Currently the mesh uses a spreadsheet to keep track of allocated resources. The process will be automated soon, but in the mean time please contact an existing member via [Slack](https://slack.nycmesh.net) or [email](mailto:contact@nycmesh.net) to have them help you acquire an ASN and IPv4 and/or IPv6 resources.
+Currently, NYC Mesh uses a spreadsheet to keep track of allocated resources, including ASNs. The process will be automated soon, but in the mean time please contact an existing member via [Slack](https://slack.nycmesh.net) or [email](mailto:contact@nycmesh.net) to have them help you acquire an IPv4 and/or IPv6 resource. ASNs are no longer needed as the [OSPF]({{< relref "ospf" >}}) dynamic routing protocol used in NYC Mesh does not have a concept of an Autonomous System Number.
 
 ## Examples
-Some configuration examples for BGP implementations known to be in use within NYC Mesh today are listed below in no particular order.
+Some configuration examples for BGP implementations that were once known to be in use within NYC Mesh are listed below, in no particular order.
 
 ### [Bird](http://bird.network.cz)
 Bird is an open source routing daemon with support for a number of different routing protocols including BGP.
@@ -164,7 +163,7 @@ protocol bgp n1234 from meshpeer {
 </details>
 
 ### [UBNT/EdgeOS](https://www.ubnt.com/products/#edgemax)
-UBNT's EdgeOS was forked from Vyatta, which in turn borrows from [Quagga](https://www.nongnu.org/quagga/).
+UBNT's EdgeOS was forked from [Vyatta](https://en.wikipedia.org/wiki/Vyatta), which in turn borrows from [Quagga](https://www.nongnu.org/quagga/).
 <details>
 <summary>**Expand for UBNT/EdgeOS Example**</summary>
 ```
@@ -360,7 +359,8 @@ policy {
 </details>
 
 ### [Mikrotik/RouterOS](https://wiki.mikrotik.com/wiki/Manual:TOC)
-Mikrotik's RouterOS has its own closed source BGP implementation.  
+Mikrotik's RouterOS has its own closed source BGP implementation.
+
 **TODO**
 
 ### [OpenBGPD](http://www.openbgpd.org/)

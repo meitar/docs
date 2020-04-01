@@ -105,6 +105,10 @@ Refresh your browser to reenter the GUI. If the firmware update was successful, 
 
 **4. Upload Configuration**
 
+The "easy way": use [the `configui` tool](https://github.com/zgiles/configui).
+
+The "hard way":
+
 1. If you are using a Mac or Linux operating system, go into Terminal, navigate to the folder where you’ve saved the config and enter the following command:
 
   ```
