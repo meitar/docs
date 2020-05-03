@@ -2,22 +2,33 @@
 title: "BGP"
 ---
 
-The [Border Gateway Protocol](https://tools.ietf.org/html/rfc4271) (BGP) is a routing protocol for directing traffic across different Autonomous Systems; it is an inter-AS routing protocol. BGP is a popular dynamic routing protocol as it is relatively simple to configure, scales well and enjoys support across multiple hardware and software vendors.
+The [Border Gateway Protocol](https://tools.ietf.org/html/rfc4271) (BGP) is a routing protocol for directing traffic across different Autonomous Systems; it is an inter-AS routing protocol.
 
-As of calendar year 2020, NYC Mesh no longer uses BGP internally. It has been replaced by [OSPF]({{< relref "ospf" >}}). BGP may still be used externally at Internet Exchange Points (IXPs) to connect with other networks, and other networks may use BGP to define their own routes leading to NYC Mesh. Prior to calendar year 2020, NYC Mesh used BGP internally to peer between members who were allocated private Autonomous System Numbers (ASNs).
+As of calendar year 2020, NYC Mesh no longer uses BGP within the mesh between neighbors or members. Use of BGP within the mesh was too static for the changing network, lacked some "automatic" properties, and we were unable to train new volunteers in its use. (For networking training, instead see [Continuing education]({{< relref "continuing-education/_index.md" >}}).)
+
+Our use of BGP has been replaced by [OSPF]({{< relref "ospf" >}}). BGP may still be used externally at Internet Exchange Points (IXPs) to connect with other networks, and other networks may use BGP to define their own routes leading to NYC Mesh. Prior to calendar year 2020, NYC Mesh used BGP internally to peer between members who were allocated private Autonomous System Numbers (ASNs).
 
 ## BGP in a nutshell
-An Autonomous System (AS) is any entity, usually a network with some opaque internal topology, that is in possession of a unique identifier called an Autonomous System Number (ASN). The process of connecting two Autonomous Systems is called peering, and it requires BGP speakers from each AS to know the ASN and IP address of their neighbors in advance (how this information is exchanged is not specified by the protocol).
+An Autonomous System (AS) is any entity, usually a network with some opaque internal topology, that is in possession of a unique identifier called an Autonomous System Number (ASN). The process of connecting two Autonomous Systems is called peering, and it requires BGP speakers from each AS to know the ASN and IP address of their neighbors in advance. How this information is exchanged is not specified by the protocol.
 
-Once the relevant identifying information is known, two neighboring Autonomous Systems can establish a session during which they exchange information about which IP subnets (prefixes) they know how to reach. A message between BGP speakers about reachability (or withdrawal thereof) is called an advertisement and can describe prefixes originating from an AS itself or from some other AS.
+## Use outside NYC Mesh
+BGP is a popular dynamic routing protocol as it is relatively simple to configure, scales well and enjoys support across multiple hardware and software vendors. The Internet uses BGP to interconnect all the thousands of companies, ISPs, and Exchanges that make up the Internet.
 
-As reachability information about a prefix propagates through a network of interconnected Autonomous Systems, each appends its ASN to an attribute list called the "AS path". The AS path can then used by each BGP speaker to prevent routing loops from forming and to determine the shortest path to the destination prefix in the event that more than one is known.
+## Use within NYC Mesh
+NYC Mesh uses BGP to connect to the Internet at Supernodes. In fact, it is a requirement of a Supernode.  
+With BGP, we are able to connect our "Autonomous System" (our organization's ID) with other organizations, such as ISPs, and participate in the Internet. By doing this, we carry our organization's IP addresses along with us and create many redundant connections to the Internet.
 
-## Filters
-BGP implementations include powerful tools for modifiying imported and exported routes. Filters were commonly used within the mesh to do things like setting a route's local preference, tagging or interpreting communities or preventing the accidental announcement of bogus routes.
+Supernodes require BGP to connect to the Internet because NYC Mesh has dedicated IP addresses for use by our organization. In order to maintain proper functionality with the Internet, we need to ensure we maintain a BGP connection at critical Internet connection points, or, Supernodes.
 
-## Local preference
-If two routes to a particular destination prefix are known, a decision must be made about which route to select. BGP's [tie breaking algorithm](https://tools.ietf.org/html/rfc4271#section-9.1.2.2) usually bases the decision on an AS path length comparison, however it is possible to override this behavior by changing the route's local preference attribute. Its value (a 32-bit unsigned integer) should be increased from the default (100) to indicate that a particular route is preferred regardless of its relative AS path length.
+## Old Instructions
+
+It is still possible to connect a BGP-only speaking device to the mesh, please coordinate with the larger group to do so, as it requires some planning.
+
+
+Expand to see some older BGP information that is kept for informational purposes and the eventuality that BGP is needed for some devices
+
+<details>
+<summary>Expand to view details...</summary>
 
 ## Communities
 [BGP communities](https://tools.ietf.org/html/rfc1997) can be used to classify routes that are imported or exported by an AS. Some definitions generally that were agreed upon by BGP speakers within NYC Mesh when BGP was still used internally are listed below. They were primarily used for interpreting the "quality" of various routes to the Internet.
@@ -365,3 +376,5 @@ Mikrotik's RouterOS has its own closed source BGP implementation.
 
 ### [OpenBGPD](http://www.openbgpd.org/)
 An example of a working configuration, abeit without BGP community rules, is available [here](https://github.com/bongozone/kibble/blob/master/src/etc/bgpd.conf).
+
+<details>
