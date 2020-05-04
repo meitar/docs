@@ -1,10 +1,10 @@
 ---
-title: 10-69-net Network
+title: 10-69-NET Network
 ---
 
 The 10-69 network is a custom Link Local network used by NYC Mesh for connecting between nodes.
 
-Each Node ( actually, each router at a node ) will have an address from the subnet `10.69.0.0/16`, using the last two octets for node identification, described below.
+Each Node (actually, each router at a node) will have an address from the subnet `10.69.0.0/16`, using the last two octets for node identification, described below.
 
 The 10-69 network should **not** appear in routing tables around the network, only the individual IPs, which indicates they are online.
 
