@@ -13,11 +13,11 @@ On the other hand, it also has some challenges, such as pre-key exchange and a l
 A WireGuard VPN is best suited for connecting single end-user devices such as laptops and phones to the mesh over the internet from a location that has no mesh access.
 
 ## Routing over WireGuard
-WireGuard, like other VPNs, can be used in conjuction with a routing protocol, such as [OSPF]( relref "ospf.md") which we use in NYC Mesh. However, there are some challenges with WireGuard and routing.
+WireGuard, like other VPNs, can be used in conjuction with a routing protocol, such as [OSPF]({{< relref "ospf.md" >}}) which we use in NYC Mesh. However, there are some challenges with WireGuard and routing.
 
 These challenge are highlighted on another page, as it is a longer and more technical discussion.
 
-Please see [VPN - WireGuard + OSPF]({{ relref "vpnwireguardospf.md"}})
+Please see [VPN - WireGuard + OSPF]({{< relref "vpnwireguardospf.md" >}})
 
 ## Device support
 WireGuard implementations are being developed on a variety of platforms. The following list provides an overview, but see the [WireGuard Installation](https://www.wireguard.com/install/) instructions for further details.
