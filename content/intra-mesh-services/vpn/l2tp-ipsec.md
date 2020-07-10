@@ -6,12 +6,12 @@ aliases:
 
 An **L2TP/IPsec VPN** is an "enterprise VPN" setup, so called because it is most often used by corporations to provide remote access to one or more computers that are physically disconnected from the rest of their corporate network. It is based on a combination of the aforementioned L2TP and IPsec protocol standards. The former protocol (L2TP, the [Layer 2 Tunneling Protocol](https://en.wikipedia.org/wiki/Layer_2_Tunneling_Protocol)) carries a "call" over the Internet, while the latter protocol suite ([IPsec](https://en.wikipedia.org/wiki/IPsec), Internet Protocol Security) encrypts the call and authenticates the participants.
 
-L2TP/IPSec is a common general-purpose VPN protocol that work with most platforms. For example, computers running Windows, macOS, iPhones, and Android devices all support this type of VPN out-of-the-box. This type of VPN is a little bit oldschool, in that it is typically found in enterprise corporate environments, which is part of what makes it so ubiquitous.  
+L2TP/IPsec is a common general-purpose VPN protocol that work with most platforms. For example, computers running Windows, macOS, iPhones, and Android devices all support this type of VPN out-of-the-box. This type of VPN is a little bit oldschool, in that it is typically found in enterprise corporate environments, which is part of what makes it so ubiquitous.  
 For this reason, we have decided to provide and endpoint of this protocol.
 
-Technically speaking, it is a combination of L2TP and IPsec protocol standards. The former protocol (L2TP, the [Layer 2 Tunneling Protocol](https://en.wikipedia.org/wiki/Layer_2_Tunneling_Protocol)) carries a "call" over the Internet, while the latter protocol suite ([IPsec](https://en.wikipedia.org/wiki/IPsec), Internet Protocol Security) encrypts the call and authenticates the participants. Although it's possible to use either protocol without the other, L2TP and IPsec are most often used together. This is because L2TP creates a connection but does not secure the connection, while IPSec protects traffic but does not itself create a network connection to carry traffic.
+Technically speaking, it is a combination of L2TP and IPsec protocol standards. The former protocol (L2TP, the [Layer 2 Tunneling Protocol](https://en.wikipedia.org/wiki/Layer_2_Tunneling_Protocol)) carries a "call" over the Internet, while the latter protocol suite ([IPsec](https://en.wikipedia.org/wiki/IPsec), Internet Protocol Security) encrypts the call and authenticates the participants. Although it's possible to use either protocol without the other, L2TP and IPsec are most often used together. This is because L2TP creates a connection but does not secure the connection, while IPsec protects traffic but does not itself create a network connection to carry traffic.
 
-L2TP/IPsec VPNs are often slower than more modern protocols because the implementation on smaller routers is usually implemented in software which makes heavy use of the router's CPU. On the other hand, more expensive routers often have a custom chip to speed-up IPSec encryption, actually making L2TP/IPsec the fastest choice in certain cases.
+L2TP/IPsec VPNs are often slower than more modern protocols because the implementation on smaller routers is usually implemented in software which makes heavy use of the router's CPU. On the other hand, more expensive routers often have a custom chip to speed-up IPsec encryption, actually making L2TP/IPsec the fastest choice in certain cases.
 
 The best performance you can reasonably expect from on small routers is around ~100Mbps.
 
@@ -79,13 +79,13 @@ These instructions refer to Apple-branded handheld devices such as the iPhone an
 1. Password `nycmeshnet`
 1. Secret: `nycmeshnet`
 
-See also [How-To Geek: How to Connect to a VPN From Your iPhone or iPad § Connect to IKEv2, L2TP/IPSec, and Cisco IPSec VPNs in iOS](https://www.howtogeek.com/215730/how-to-connect-to-a-vpn-from-your-iphone-or-ipad/).
+See also [How-To Geek: How to Connect to a VPN From Your iPhone or iPad § Connect to IKEv2, L2TP/IPsec, and Cisco IPsec VPNs in iOS](https://www.howtogeek.com/215730/how-to-connect-to-a-vpn-from-your-iphone-or-ipad/).
 
 ### Android
 See [How-To Geek: How to Connect to a VPN on Android § Android’s Built-In VPN Support](https://www.howtogeek.com/135036/how-to-connect-to-a-vpn-on-android/).
 
 ### GNU/Linux - GNOME/Network Manager
-Most GNU/Linux distributions ship with IPSec/L2TP support, but you may need to install additional software packages to use your Desktop Environment's standard networking widgets to control the VPN connection. The following short guide assumes you are using GNOME and Network Manager.
+Most GNU/Linux distributions ship with IPsec/L2TP support, but you may need to install additional software packages to use your Desktop Environment's standard networking widgets to control the VPN connection. The following short guide assumes you are using GNOME and Network Manager.
 
 1. Make sure you have the necessary software installed:
     * Commands for Ubuntu 20.04 (LTS):
