@@ -38,6 +38,14 @@ This section provides connection information for NYC Mesh VPN endpoints that use
         * Password: `nycmeshnet`
     * OSPF Node-Peering (Same, connect as above, use [OSPF]({{< relref "ospf" >}}) afterwards.)
 
+### Supernode 3
+* Server domain name: `l2tpvpn.sn3.mesh.nycmesh.net`
+* Supported connection methods:
+    * Anonymous:
+        * Username: `nycmesh`
+        * Password: `nycmeshnet`
+    * OSPF Node-Peering (Same, connect as above, use [OSPF]({{< relref "ospf" >}}) afterwards.)
+
 ## Connection Guides
 Please follow the below connection guides for each platform.
 
@@ -47,7 +55,7 @@ Please follow the below connection guides for each platform.
 1. Click on the plus button (Add a VPN connection)
 1. Choose VPN provider (Microsoft by default)
 1. Conenction name (Name it whatever you want)
-1. Server name or address `l2tpvpn.sn1.mesh.nycmesh.net`
+1. Server name or address `l2tpvpn.sn1.mesh.nycmesh.net` or `l2tpvpn.sn3.mesh.nycmesh.net`
 1. VPN Type: L2TP/IPsec with pre-shared key
 1. Pre-shared key: `nycmeshnet`
 1. Type of sign-in info: User name and password
@@ -73,7 +81,7 @@ These instructions refer to Apple-branded handheld devices such as the iPhone an
 1. Tap on Add VPN Configuration
 1. Tap on Type and choose L2TP
 1. Description (Anything you want)
-1. Server: `l2tpvpn.sn1.mesh.nycmesh.net`
+1. Server: `l2tpvpn.sn1.mesh.nycmesh.net` or `l2tpvpn.sn3.mesh.nycmesh.net`
 1. Account: `nycmesh`
 1. Leave RSA SecurID off
 1. Password `nycmeshnet`
@@ -108,7 +116,7 @@ Most GNU/Linux distributions ship with IPsec/L2TP support, but you may need to i
 1. Open the GNOME Settings app and choose the "*Network*" panel.
 1. Add a new VPN connection of type "*Layer 2 Tunneling Protocol (L2TP)*". If this option doesn't appear for you, ensure you have installed the necessary software for your distribution, discussed above.
 1. In the "Add VPN" dialogue box, enter the following details:
-    * Gateway: `l2tpvpn.sn1.mesh.nycmesh.net`
+    * Gateway: `l2tpvpn.sn1.mesh.nycmesh.net` or `l2tpvpn.sn3.mesh.nycmesh.net`
     * User name: `nycmesh`
     * Password: `nycmeshnet`  
         (Note: You may have to click a question mark on the right of the textbox to activate the text field.)
