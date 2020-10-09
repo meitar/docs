@@ -60,6 +60,9 @@ DHCP
 
 # E
 
+[Ethernet cable](../hardware/ethernet/)
+:The cable we use that has 8 wires for carrying data and power
+
 # F
 
 FFTF
@@ -88,6 +91,9 @@ IPv6
 
 ISP
 : Internet Service Provider
+
+IXP
+: Internet Exchange Point, where internet networks come together to peer or exchange traffic between their networks. (An IXP is a network and not really a "point" or a building) 
 
 # J
 
@@ -157,8 +163,14 @@ RIR
 
 # S
 
+Sector antenna
+: a directional antenna designed to connect to many other antennas. Typical "sectors" are 90 degrees or 120 degrees
+
 SSID
 : Service set identification- the Wi-Fi access point name
+
+Supernode
+: This is a large install, typically with a fiber connection and many sector and point-to-point antennas
 
 # T
 
