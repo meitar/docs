@@ -448,7 +448,38 @@ set [ find interface=ether1] address=192.168.88.4/24
 
 ---
 
-### <a name="liteac"></a>LiteAC 120 sector
+### <a name="liteac"></a>LiteAP 120 sector
+
+
+Connect to the LiteAP GUI.  Upgrade the firmware
+
+In Wireless set:<br>
+- Wireless mode to **Access Point PtMP airmax AC** <br>
+- SSID  "nycmesh-xxxx-direction" (for exemple: nycmesh-1635-east) <br>
+- channel width  40 Mhz <br>
+- Control Freq.  ON <br>
+    Select all freq. and uncheck from 5565 to 5705 (5565 and 5705 included)  
+    (This is extremely **important**, due to FCC regulations in NY we need to make sure to not use any channel overlapping 5590 - 5677)<br>
+- choose a center freq. different then other local antenna (sector, litebeam, powerbeam, etc ...)<br>
+- Wireless Security: WPA security personal  /  Preshared key: nycmeshnet <br>
+- TDD framing: Flexible  (or Flexibe (new) depending on firmware)<br>
+- ReSE ON <br>
+- Advance:  Isolation ON <br>
+
+In Network set:<br>
+ - DHCP  and fallback IP 192.168.1.20
+ 
+ In Services:<br>
+  - Add UNMS key
+
+In System set:<br>
+  - Device name: same as SSID<br>
+  - turn NTP server ON<br>
+  - Set the time zone<br>
+  
+  <br><br>
+
+
 
 ---
 
