@@ -2,7 +2,7 @@
   <p>
     Last updated
     {{/* Go-specific layout string that looks like a time, don't change. */}}
-    {{- .Lastmod.Format "January 2, 2006" }}{{ if .GitInfo }} by {{ .GitInfo.AuthorName -}}{{ end }}
+    {{- .Lastmod.Format "January 2, 2006" }} by {{ if .GitInfo }}{{ .GitInfo.AuthorName -}}{{else}} unknown {{end}}
   </p>
 </div>
 
