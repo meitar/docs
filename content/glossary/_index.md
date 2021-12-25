@@ -71,10 +71,16 @@ FFTF
 FNF
 : Free Network Foundation
 
+FTTH
+: Fiber to the home. For example our [Grand Street Hub](https://www.nycmesh.net/map/nodes/1932-1933-1934)
+
 # G
 
 Guifi
 : The largest community owned network, based in Catalonia, Spain
+
+GPON 
+: Gigabit Ethernet Passive Optical Network. Fiber network that doesn't need power
 
 # H
 
@@ -127,6 +133,12 @@ node
 
 OLSR
 : Optimized Link State Routing Protocol (popular mesh protocol)
+
+OLT
+: [Optical Line Terminal](https://www.ui.com/ufiber/ufiber-olt/). This expensive device powers a fiber GPON network
+
+ONT
+: [Optical Network Terminal](https://www.ui.com/ufiber/ufiber-loco/). Small cheap device that converts fiber to ethernet in apartment
 
 OpenWRT
 : Open source Wireless Receiver/Transmitter (WRT) software
